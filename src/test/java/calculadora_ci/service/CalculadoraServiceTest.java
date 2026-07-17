@@ -1,8 +1,8 @@
 package calculadora_ci.service;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class CalculadoraServiceTest {
 
@@ -10,7 +10,7 @@ class CalculadoraServiceTest {
 
     @Test
     void deveSomar() {
-        assertEquals(8, service.somar(5,3));
+        assertEquals(10, service.somar(5,3));
     }
 
     @Test
